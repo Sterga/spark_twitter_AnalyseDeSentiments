@@ -35,12 +35,12 @@ StreamListener produit des données pour Kafka Topic nommé «twitter». <br/>
 1. Créez un compte API Twitter et obtenez des clés pour twitter_config.py <br/>
 2. Démarrez Apache Kafka <br/>
 <br/>
-**kafka-server-start.sh /config/server.properties**
+kafka-server-start.sh /config/server.properties
 <br/>
 3. Exécutez tweet_listener.py avec Python version 3 et le nom de sujet souhaité.
 <br/>
-**spark-submit tweet_listener.py "Votre série préférée"**
+spark-submit tweet_listener.py "Votre série préférée"
 <br/>
 4. Exécutez twitter_topic_sentiment.py avec Python version 3.
 <br/>
-**spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.1.1 twitter_topic_sentiment.py**
+spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.1.1 twitter_topic_sentiment.py
